@@ -1,0 +1,124 @@
+/* stiluri generale */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+:root {
+    --color-primary: #f21137;
+    --color-negative: #121212;
+    --color-positive: aliceblue;
+}
+
+body {
+    font-family: 'IBM Plex Mono';
+    margin: 0;
+}
+
+h2 {
+    background-color: var(--color-negative);
+    color: var(--color-positive);
+    padding: 1% 4% 1% 4%;
+}
+
+.container {
+    margin-bottom: 5% 0 5% 0;
+}
+
+.intro {
+    margin: 5% 0 2% 0;
+}
+
+.btn{
+    padding: 1% 3% 1% 3%;
+}
+
+.btn-outline-dark:hover{
+    background-color: var(--color-primary);
+    color:var(--color-positive);
+    border-color: var(--color-primary)
+}
+
+.btn-link:hover{
+    background-color: none;
+    color:var(--color-primary)
+}
+
+
+/* navigare */
+.navigare {
+    background-color: var(--color-positive);
+    padding: 0.5% 2% 0.5% 2%;
+}
+
+.navbar-brand {
+    margin-right: 2%;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--color-negative);
+    margin-right: 1em;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+    font-weight: 900;
+}
+
+/* carusel hero */
+
+.carousel-item {
+    -webkit-transition: 1s ease-in-out left;
+    -moz-transition: 1s ease-in-out left;
+    -o-transition: 1s ease-in-out left;
+    transition: 1s ease-in-out left;
+}
+
+.carousel-item .ratio img {
+    object-fit: cover;
+}
+
+/* text */
+
+.descriere {
+    max-width: 50ch;
+    white-space: wrap;
+}
+
+.fst-italic{
+    color:var(--color-primary)
+}
+
+/* proiecte */
+
+.proj {
+
+    img {
+        margin: 0 0 4% 0;
+    }
+
+}
+
+
+/* servicii */
+
+.servicii {
+    border-radius: 0;
+}
+
+.servicii:hover {
+    background-color: var(--color-primary);
+
+    .card-body {
+        color: var(--color-positive)
+    }
+}
+
+
+/* footer */
+
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-positive);
+    margin: 5% 0 0 0;
+    padding: 2%;
+}
